@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo2.css" />
+    <link rel="icon" href="com019.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Conversor de Medidas em Javascript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Lora:wght@500&family=Old+Standard+TT:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Conversor de Medidas em Js</h1>
+    <div>
+      <a href="calculadora.html">
+        <button role="button" class="button-name">
+          Trocar para Calculadora
+        </button>
+      </a>
+    </div>
+    <br>  
+    <div class="conversor-container">
+      <div class="conversor">
+          <form action="" method="post" id="myform">
+              <div class="select">
+                <label for="Categoria"><p>Selecione a Medida:</p></label>
+                <select name="Categoria" id="Categoria">
+                  <option value="Comprimento">Comprimento</option>
+                  <option value="Velocidade">Velocidade</option>
+                  <option value="Tempo">Tempo</option>
+                  <option value="Área">Área</option>
+                  <option value="Massa">Massa</option>
+                  <option value="Temperatura">Temperatura</option>
+                  <option value="Volume">Volume</option>
+                </select>
+              </div>
+              <div class="PrimeiraMedida">
+                <select name="numero1" id="numero1">
+                  <option value="1"></option>
+                  <option value="2"></option>
+                  <option value="3"></option>
+                  <option value="4"></option>
+                  <option value="5"></option>
+                  <option value="6"></option>
+                  <option value="7"></option>
+                </select>
+              </div>
+              <br>
+              <br>
+              <br>
+              <div>
+                <input id="input1" type="number" name="text" class="input" placeholder="Valor">
+              </div>
+              <span class="material-symbols-outlined">equal</span>
+                <div class="SegundaMedida">
+                  <select name="numero2" id="numero2">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                  </select>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div>
+                  <input id="input2" type="number" name="text" class="input" placeholder="Valor">
+                </div> 
+          </form>
+        </div>
+        <div class="formula-container">
+          <div id="formula">
+            <h2>Fórmula:</h2>
+          </div>
+          <p id="textoformula">Para fazer a conversão</p>
+        </div>
+      </div>
+  </div>
+    <script src="conversor.js"></script>
+  </body>
+</html>
